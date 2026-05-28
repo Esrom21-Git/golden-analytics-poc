@@ -1,4 +1,3 @@
-﻿# golden-analytics-poc
 # Golden Analytics POC
 
 A lightweight proof-of-concept dashboard for exploring government spending data.
