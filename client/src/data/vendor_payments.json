@@ -1,0 +1,107 @@
+[
+  {
+    "Fiscal Year": 2021,
+    "Fund Type": "General Fund",
+    "Vendor": "Department of Transportation",
+    "Amount": 2500000,
+    "Category": "Infrastructure"
+  },
+  {
+    "Fiscal Year": 2021,
+    "Fund Type": "General Fund",
+    "Vendor": "Department of Education",
+    "Amount": 3200000,
+    "Category": "Education"
+  },
+  {
+    "Fiscal Year": 2021,
+    "Fund Type": "General Fund",
+    "Vendor": "Department of Health",
+    "Amount": 1800000,
+    "Category": "Healthcare"
+  },
+  {
+    "Fiscal Year": 2021,
+    "Fund Type": "Special Revenue Fund",
+    "Vendor": "Environmental Protection",
+    "Amount": 950000,
+    "Category": "Environment"
+  },
+  {
+    "Fiscal Year": 2021,
+    "Fund Type": "Special Revenue Fund",
+    "Vendor": "Parks and Recreation",
+    "Amount": 750000,
+    "Category": "Recreation"
+  },
+  {
+    "Fiscal Year": 2022,
+    "Fund Type": "General Fund",
+    "Vendor": "Department of Transportation",
+    "Amount": 2800000,
+    "Category": "Infrastructure"
+  },
+  {
+    "Fiscal Year": 2022,
+    "Fund Type": "General Fund",
+    "Vendor": "Department of Education",
+    "Amount": 3500000,
+    "Category": "Education"
+  },
+  {
+    "Fiscal Year": 2022,
+    "Fund Type": "General Fund",
+    "Vendor": "Department of Health",
+    "Amount": 2100000,
+    "Category": "Healthcare"
+  },
+  {
+    "Fiscal Year": 2022,
+    "Fund Type": "Special Revenue Fund",
+    "Vendor": "Environmental Protection",
+    "Amount": 1200000,
+    "Category": "Environment"
+  },
+  {
+    "Fiscal Year": 2022,
+    "Fund Type": "Special Revenue Fund",
+    "Vendor": "Parks and Recreation",
+    "Amount": 900000,
+    "Category": "Recreation"
+  },
+  {
+    "Fiscal Year": 2023,
+    "Fund Type": "General Fund",
+    "Vendor": "Department of Transportation",
+    "Amount": 3100000,
+    "Category": "Infrastructure"
+  },
+  {
+    "Fiscal Year": 2023,
+    "Fund Type": "General Fund",
+    "Vendor": "Department of Education",
+    "Amount": 3800000,
+    "Category": "Education"
+  },
+  {
+    "Fiscal Year": 2023,
+    "Fund Type": "General Fund",
+    "Vendor": "Department of Health",
+    "Amount": 2400000,
+    "Category": "Healthcare"
+  },
+  {
+    "Fiscal Year": 2023,
+    "Fund Type": "Special Revenue Fund",
+    "Vendor": "Environmental Protection",
+    "Amount": 1500000,
+    "Category": "Environment"
+  },
+  {
+    "Fiscal Year": 2023,
+    "Fund Type": "Special Revenue Fund",
+    "Vendor": "Parks and Recreation",
+    "Amount": 1100000,
+    "Category": "Recreation"
+  }
+]
