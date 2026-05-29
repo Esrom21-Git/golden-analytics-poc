@@ -1,40 +1,43 @@
-# Golden Analytics POC
+# golden-analytics-poc
 
-A lightweight proof-of-concept dashboard for exploring government spending data and auditing AI interactions.
+## What this project is
 
-This repo contains:
-- `client/` main React + Vite dashboard with charts, filters, and natural-language inquiry.
-- `VehicleManagement.Api/` minimal .NET backend for vehicles and future log ingestion.
-- `client/src/services/logging.ts` captures AI questions and responses for governance.
-- `client/src/data/vendor_payments.json` sample dataset for spending insights.
+Golden Analytics is a proof-of-concept dashboard for exploring government vendor payment data without writing SQL. It combines a React + Vite frontend, a .NET backend API, and a simple AI question flow so non-technical users can ask questions in plain English and see results immediately.
 
-The focus is on demonstrating the core flow: data exploration, natural-language insights, and logging, without building a full enterprise system.
+## What to say in a non-technical demo
 
-## Highlights
-- Natural-language "Ask a question" experience
-- Interactive spending charts and filters
-- Frontend/backend separation with a .NET API
-- AI governance logging for every interaction
-- Clean folder-based commit history
+- "This is a spending dashboard where you can ask a question in plain language and get an answer — no SQL needed."
+- "The app shows charts and totals. You can ask things like 'What is the top spending category?' or 'Show me the total spending'."
+- "Behind the scenes there is a lightweight .NET API, but from the user view it is just a dashboard with filters, charts, and a question panel."
+- "The core idea is to make government spending data accessible to non-technical users through a familiar interface."
 
-## Run locally
-```powershell
-cd "C:\Users\kidan\New folder"
-& "C:\Program Files\nodejs\npm.cmd" install
-& "C:\Program Files\nodejs\npm.cmd" run dev
+## Key files
+
+- [client/src/pages/Home.tsx](client/src/pages/Home.tsx) — dashboard logic, chart data, and natural-language question handling
+- [client/src/services/logging.ts](client/src/services/logging.ts) — AI governance logging: records every question and answer for audit and accountability
+- [client/src/data/vendor_payments.json](client/src/data/vendor_payments.json) — sample government vendor payment dataset
+- [VehicleManagement.Api/Program.cs](VehicleManagement.Api/Program.cs) — backend API entry point
+
+## Demo talking points
+
+- "The dashboard answers questions without SQL or spreadsheets."
+- "It is a proof-of-concept, so the focus is the user flow and the value of plain-language queries."
+- "Every AI question and response is logged — this gives us an audit trail for governance and accountability."
+- "The backend is minimal by design, making it easy to extend with a database or a stronger AI model."
+
+## Run instructions
+
+**Frontend**
+```bash
+npm install
+npm run dev
 ```
-Open the URL printed by Vite (for example `http://localhost:5175/`).
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-In a second terminal, start the backend:
-```powershell
-cd "C:\Users\kidan\New folder\VehicleManagement.Api"
-dotnet run --urls http://localhost:5215
+**Backend**
+```bash
+dotnet run --project VehicleManagement.Api
 ```
+The API runs on `http://localhost:5000` by default.
 
-## Notes
-- The project is a proof-of-concept, not a finished production app.
-- AI interaction logs are stored locally in `localStorage` under `ai_interactions` and also attempted to be sent to `/api/logs`.
-- The dashboard is designed for non-technical users who need simple spending insights without SQL.
-
-## Video guide
-See `VIDEO_SCRIPT.md` for the recording script, timestamps, and exact talking points.
+> This project is a demo of core functionality, not a fully polished enterprise product. The goal is to show the value of natural-language exploration and AI audit logging in a simple spending dashboard.

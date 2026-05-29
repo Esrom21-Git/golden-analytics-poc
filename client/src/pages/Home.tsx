@@ -92,24 +92,24 @@ export default function Home() {
   const COLORS = ["#3b82f6", "#ef4444", "#10b981", "#f59e0b", "#8b5cf6"];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-      <header className="bg-white shadow-sm border-b">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-blue-50">
+      <header className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 shadow-lg">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-slate-900">GoldenInsights</h1>
-              <p className="text-slate-600 mt-1">Washington State Fiscal Data Explorer</p>
+              <h1 className="text-3xl font-bold text-amber-400">GoldenInsights</h1>
+              <p className="text-slate-400 mt-1">Washington State Fiscal Data Explorer</p>
             </div>
             <div className="text-right">
-              <p className="text-sm text-slate-600">For non-technical users</p>
-              <p className="text-xs text-slate-500 mt-1">AI-powered data insights</p>
+              <p className="text-sm text-slate-300">For non-technical users</p>
+              <p className="text-xs text-amber-500 mt-1">AI-powered data insights</p>
             </div>
           </div>
         </div>
       </header>
 
       <main className="max-w-7xl mx-auto px-6 py-8">
-        <Card className="mb-8 bg-blue-50 border-blue-200">
+        <Card className="mb-8 bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-300 shadow-sm">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Search className="w-5 h-5" />
@@ -207,52 +207,52 @@ export default function Home() {
         </Card>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          <Card>
+          <Card className="bg-gradient-to-br from-emerald-500 to-green-600 border-0 text-white shadow-md">
             <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-slate-600">Total Spending</CardTitle>
+              <CardTitle className="text-sm font-medium text-emerald-100">Total Spending</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
-                <DollarSign className="w-5 h-5 text-green-600" />
-                <span className="text-2xl font-bold text-slate-900">
+                <DollarSign className="w-5 h-5 text-white" />
+                <span className="text-2xl font-bold text-white">
                   ${(processedData.totalSpending / 1000000).toFixed(1)}M
                 </span>
               </div>
-              <p className="text-xs text-slate-500 mt-2">
+              <p className="text-xs text-emerald-200 mt-2">
                 {processedData.filtered.length} transactions
               </p>
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="bg-gradient-to-br from-blue-500 to-indigo-600 border-0 text-white shadow-md">
             <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-slate-600">Top Category</CardTitle>
+              <CardTitle className="text-sm font-medium text-blue-100">Top Category</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-blue-600" />
-                <span className="text-2xl font-bold text-slate-900">
+                <TrendingUp className="w-5 h-5 text-white" />
+                <span className="text-2xl font-bold text-white">
                   {processedData.byCategory[0]?.name}
                 </span>
               </div>
-              <p className="text-xs text-slate-500 mt-2">
+              <p className="text-xs text-blue-200 mt-2">
                 ${(processedData.byCategory[0]?.value / 1000000).toFixed(1)}M
               </p>
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="bg-gradient-to-br from-violet-500 to-purple-600 border-0 text-white shadow-md">
             <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-slate-600">Top Vendor</CardTitle>
+              <CardTitle className="text-sm font-medium text-violet-100">Top Vendor</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex items-center gap-2">
-                <DollarSign className="w-5 h-5 text-purple-600" />
-                <span className="text-lg font-bold text-slate-900 truncate">
+                <DollarSign className="w-5 h-5 text-white" />
+                <span className="text-lg font-bold text-white truncate">
                   {processedData.topVendor?.Vendor}
                 </span>
               </div>
-              <p className="text-xs text-slate-500 mt-2">
+              <p className="text-xs text-violet-200 mt-2">
                 ${(processedData.topVendor?.Amount / 1000000).toFixed(1)}M
               </p>
             </CardContent>

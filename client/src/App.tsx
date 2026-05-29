@@ -16,31 +16,31 @@ function App() {
   return (
     <div className="app-container">
       {/* Navigation */}
-      <nav className="bg-white border-b border-gray-200 shadow-sm">
+      <nav className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 border-b border-slate-700 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
+          <div className="flex justify-between h-14">
             <div className="flex items-center gap-8">
-              <h1 className="text-xl font-bold text-blue-600">Dashboard</h1>
-              <div className="flex gap-4">
+              <span className="text-xl font-bold text-amber-400">Golden Analytics</span>
+              <div className="flex gap-2">
                 <button
                   onClick={() => handlePageChange("insights")}
-                  className={`px-4 py-2 rounded-md transition ${
+                  className={`px-4 py-2 rounded-md text-sm transition ${
                     currentPage === "insights"
-                      ? "bg-blue-100 text-blue-700 font-semibold"
-                      : "text-gray-600 hover:text-gray-900"
+                      ? "bg-amber-500 text-slate-900 font-semibold"
+                      : "text-slate-300 hover:text-white hover:bg-slate-700"
                   }`}
                 >
-                  GoldenInsights
+                  Spending Dashboard
                 </button>
                 <button
                   onClick={() => handlePageChange("vehicles")}
-                  className={`px-4 py-2 rounded-md transition ${
+                  className={`px-4 py-2 rounded-md text-sm transition ${
                     currentPage === "vehicles"
-                      ? "bg-blue-100 text-blue-700 font-semibold"
-                      : "text-gray-600 hover:text-gray-900"
+                      ? "bg-amber-500 text-slate-900 font-semibold"
+                      : "text-slate-300 hover:text-white hover:bg-slate-700"
                   }`}
                 >
-                  Vehicle Management
+                  Admin
                 </button>
               </div>
             </div>
